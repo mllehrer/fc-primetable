@@ -1,14 +1,8 @@
-# fc-primetable
+# print-primetable
+Funding club coding challenge--prints a table of prime number products to standard output
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
-
-## License
-
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+## To run:
+- Clone repo
+- Navigate to root directory (fc-primetable)
+- Typing "lein run n" where n is an integer to stdin produces a table of n prime products.
+- Typing "lein test" runs tests.
