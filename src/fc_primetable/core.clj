@@ -42,6 +42,14 @@
                      (format-col (nth numbers n) col-width)
                      (map #(format-col % col-width) (map #(* % (nth numbers n)) numbers))))))))
 
-(defn main [n]
+(defn main
   "Prints a table of n prime number products to stdout"
-  (print-table (find-n-primes (read-string n))))
+  ([n]
+   (let [input (read-string n)]
+     (if (integer? input)
+       (if (pos? input)
+         (print-table (find-n-primes input))
+         (println "Please input a postive integer."))
+       (println "Please input a positive integer."))))
+  ([]
+   (println "The program is invoked with lein run [positive integer]. Please try again.")))
