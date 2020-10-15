@@ -1,5 +1,5 @@
 # print-primetable
-Prints a table of prime number products to standard output
+Prints a table of prime number products to standard output.
 This is a Leiningen project, so Leiningen must be installed on your computer to run it.
 
 ## To run:
